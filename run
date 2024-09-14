@@ -1,0 +1,19 @@
+#!/usr/bin/env nu
+
+def main [] {}
+
+def "main build" [] {
+	zig build
+}
+
+def "main build-safe" [] {
+	zig build -Doptimize=ReleaseSafe
+}
+
+def "main build-small" [] {
+	zig build -Doptimize=ReleaseSmall
+}
+
+def "main build-fast" [] {
+	zig build -Doptimize=ReleaseFast
+}
